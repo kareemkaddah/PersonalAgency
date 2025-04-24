@@ -1,0 +1,9 @@
+/* body {
+  background: linear-gradient(#010586, #000000);
+} */
+
+.main-text {
+  background-color: red;
+  width: 100%;
+  height: 1vh;
+}
