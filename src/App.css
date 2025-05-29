@@ -1,12 +1,22 @@
 @import 'tailwindcss';
 * {
 }
-#root {
+/* #root {
   max-width: 1280px;
   background-color: #090c24;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+} */
+html,
+body {
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #090c24;
+  overflow-x: hidden;
 }
 
 .logo {

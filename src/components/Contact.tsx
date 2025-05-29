@@ -4,7 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 function Contact() {
   const notify = () => toast('Contact us on kontakt@kaddah.de');
   return (
-    <div>
+    <div id='contact' className='text-center'>
       <p className='text-3xl font-extrabold tracking-tight sm:text-4xl md:text-5xl'>
         Get In <span className='text-[#503d74]'>Touch</span>
       </p>
