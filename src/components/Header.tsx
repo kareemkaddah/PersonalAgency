@@ -11,9 +11,11 @@ function Header() {
           <span>{item}</span>
           <span
             className='
-              absolute bottom-0 left-0 w-full h-1 bg-lime-300 rounded-full
-              opacity-0 group-hover:opacity-100 group-hover:shadow-[0_0_10px_2px_#a3e635]
-              transition-all duration-300
+              absolute bottom-0 left-0 h-1 w-full bg-lime-300 rounded-full
+              transform scale-x-0 origin-left
+              group-hover:scale-x-100
+              transition-transform duration-700 ease-out
+              group-hover:shadow-[0_0_10px_2px_#a3e635]
             '
           ></span>
         </div>
@@ -21,4 +23,5 @@ function Header() {
     </div>
   );
 }
+
 export default Header;

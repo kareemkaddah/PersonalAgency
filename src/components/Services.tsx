@@ -139,7 +139,7 @@ export default function ServicesSection() {
 
               {service.packages.map((pkg) => (
                 <div key={pkg.id} className='mb-6'>
-                  <div className='flex items-center gap-2 text-lime-400 font-medium mb-1 '>
+                  <div className='flex items-center gap-2 text-lime-400 font-medium mb-1 text-left '>
                     <PackageIcon className='w-5 h-5' />
                     {pkg.name}
                   </div>
@@ -148,7 +148,10 @@ export default function ServicesSection() {
                   </p>
                   <ul className='space-y-1.5 text-sm text-gray-300 '>
                     {pkg.features.map((feature, idx) => (
-                      <li key={idx} className='flex items-start gap-2'>
+                      <li
+                        key={idx}
+                        className='flex items-start gap-2 text-left'
+                      >
                         <CheckCircleIcon className='w-4 h-4 text-lime-400 mt-0.5' />
                         {feature}
                       </li>

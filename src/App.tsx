@@ -7,9 +7,9 @@ function App() {
   const [showIntro, setShowIntro] = useState(true);
   return (
     <>
-      {showIntro && <IntroOverlay onFinish={() => setShowIntro(false)} />}
-
       <div className='bg-[#090c24] text-white p-6 min-h-screen '>
+        {showIntro && <IntroOverlay onFinish={() => setShowIntro(false)} />}
+
         <Home />
       </div>
     </>

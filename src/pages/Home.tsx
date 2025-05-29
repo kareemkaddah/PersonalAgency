@@ -3,6 +3,7 @@ import intro from '../assets/intro.jpeg';
 import Services from '../components/Services';
 import Contact from '../components/Contact';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 function Home() {
   return (
     <>
@@ -56,6 +57,7 @@ function Home() {
       <div className='mt-56'>
         <Contact />
       </div>
+      <Footer />
     </>
   );
 }
