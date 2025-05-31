@@ -1,5 +1,3 @@
-import React from 'react';
-
 import intro from '../assets/intro.jpeg';
 import Services from '../components/Services';
 import Contact from '../components/Contact';

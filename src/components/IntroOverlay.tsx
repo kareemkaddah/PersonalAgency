@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 const greetings = [
   'Willkommen',
   'Welcome',
-  ' أَهْلاً وسَهْلاً',
+  'أَهْلاً وسَهْلاً',
   'Bienvenido',
   '欢迎',
   'ようこそ',
@@ -13,25 +13,22 @@ export const IntroOverlay: React.FC<{ onFinish: () => void }> = ({
   onFinish,
 }) => {
   const [currentGreeting, setCurrentGreeting] = useState(greetings[0]);
-  const [index, setIndex] = useState(0);
+  const indexRef = useRef(0); // useRef instead of useState
   const [slideOut, setSlideOut] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setIndex((prev) => {
-        const nextIndex = prev + 1;
-        if (nextIndex >= greetings.length) {
-          clearInterval(interval);
-          setTimeout(() => {
-            setSlideOut(true);
-            setTimeout(onFinish, 1000);
-          }, 500); // small delay before sliding out
-          return prev;
-        }
-        setCurrentGreeting(greetings[nextIndex]);
-        return nextIndex;
-      });
-    }, 500); // faster change
+      indexRef.current += 1;
+      if (indexRef.current >= greetings.length) {
+        clearInterval(interval);
+        setTimeout(() => {
+          setSlideOut(true);
+          setTimeout(onFinish, 1000);
+        }, 500);
+        return;
+      }
+      setCurrentGreeting(greetings[indexRef.current]);
+    }, 500);
     return () => clearInterval(interval);
   }, [onFinish]);
 
