@@ -15,14 +15,14 @@ function Header() {
   return (
     <div
       className='
-      fixed top-0 left-1/2 transform -translate-x-1/2
-      flex justify-between items-center
-      z-50 w-full max-w-6xl
-      backdrop-blur-md bg-[#090c24]/70
-      text-[#503d74] font-bold
-      text-xl sm:text-3xl lg:text-4xl
-      px-8 py-4 rounded-b-2xl shadow-lg
-    '
+         mx-auto w-full max-w-6xl
+        flex justify-between items-center
+        z-50
+        backdrop-blur-md bg-[#090c24]/70
+        text-[#503d74] font-bold
+        text-xl sm:text-3xl lg:text-4xl
+        px-8 py-4 rounded-b-2xl shadow-lg
+      '
     >
       {/* KD Logo */}
       <div

@@ -5,6 +5,7 @@ import {
   PackageIcon,
   CheckCircleIcon,
 } from 'lucide-react';
+import { Link } from 'react-scroll';
 
 interface Package {
   id: string;
@@ -162,12 +163,14 @@ export default function ServicesSection() {
 
               {/* CTA Button */}
               <div className='mt-auto pt-4'>
-                <a
-                  href='#contact'
-                  className='block text-center bg-lime-400 text-[#0c1031] font-semibold px-4 py-2 rounded-md transition duration-300 hover:bg-[#503d74]'
+                <Link
+                  to='contact'
+                  smooth={true}
+                  duration={500}
+                  className='block text-center bg-lime-400 text-[#0c1031] font-semibold px-4 py-2 rounded-md transition duration-300 hover:bg-[#503d74] cursor-pointer'
                 >
                   Inquire about {service.title}
-                </a>
+                </Link>
               </div>
             </div>
           ))}
