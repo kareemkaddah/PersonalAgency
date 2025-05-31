@@ -5,7 +5,7 @@ function Header() {
     { name: 'Contact', id: 'contact' },
   ];
 
-  const handleScroll = (id) => {
+  const handleScroll = (id: string) => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });

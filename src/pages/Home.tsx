@@ -5,6 +5,7 @@ import Services from '../components/Services';
 import Contact from '../components/Contact';
 
 import Footer from '../components/Footer';
+import { Link } from 'react-scroll';
 
 function Home() {
   return (
@@ -22,18 +23,34 @@ function Home() {
               Unlock unparalleled potential with our expert web development...
             </p>
             <div className='flex gap-4 p-4 pt-0'>
-              <a
+              <Link
+                to='services'
+                smooth={true}
+                duration={500}
+                className='bg-lime-400 text-white px-4 py-2 rounded shadow-lg no-underline transition transform duration-500 hover:bg-[#503d74] hover:scale-105 hover:shadow-fuchsia-950'
+              >
+                Our Services
+              </Link>
+              {/* <a
                 href='#'
                 className='bg-lime-400 text-white px-4 py-2 rounded shadow-lg no-underline transition transform duration-500 hover:bg-[#503d74] hover:scale-105 hover:shadow-fuchsia-950'
               >
                 Our Services
-              </a>
-              <a
+              </a> */}
+              <Link
+                to='contact'
+                smooth={true}
+                duration={500}
+                className='bg-lime-400 text-white px-4 py-2 rounded shadow-lg no-underline transition transform duration-500 hover:bg-[#503d74] hover:scale-105 hover:shadow-fuchsia-950'
+              >
+                Get a Free Quote
+              </Link>
+              {/* <a
                 href='#'
                 className='bg-lime-400 text-white px-4 py-2 rounded shadow-lg no-underline transition transform duration-500 hover:bg-[#503d74] hover:scale-105 hover:shadow-fuchsia-950'
               >
                 Get a Free Quote
-              </a>
+              </a> */}
             </div>
           </div>
 
