@@ -1,13 +1,14 @@
 import intro from '../assets/intro.jpeg';
 import Services from '../components/Services';
 import Contact from '../components/Contact';
-
+import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Link } from 'react-scroll';
 
 function Home() {
   return (
     <>
+      <Header></Header>
       <div className='p-8' id='home'>
         <section className='text-white p-6 mt-8 rounded-lg flex flex-col md:flex-row items-center gap-8 max-w-screen-xl mx-auto'>
           <div className='w-full md:w-1/2 '>

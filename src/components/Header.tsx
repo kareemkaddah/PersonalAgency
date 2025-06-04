@@ -15,6 +15,7 @@ function Header() {
   return (
     <div
       className='
+
          mx-auto w-full max-w-6xl
         flex justify-between items-center
         z-50
