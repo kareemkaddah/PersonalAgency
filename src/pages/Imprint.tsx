@@ -7,6 +7,7 @@ const Imprint = () => {
       <Header></Header>
       <div className='p-6 max-w-3xl mx-auto'>
         <h1 className='text-2xl font-bold mb-4 text-[#503d74]'>Impressum</h1>
+
         <p>
           <strong className='text-lime-400'>Angaben gemäß § 5 TMG:</strong>
         </p>
@@ -36,6 +37,14 @@ const Imprint = () => {
           Westerholtstraße 26
           <br />
           44579 Castrop-Rauxel
+        </p>
+
+        <p className='mt-4'>
+          <strong className='text-lime-400'>
+            Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:
+          </strong>
+          <br />
+          DE454611228
         </p>
 
         <p className='mt-4 text-sm text-gray-500'>
