@@ -6,6 +6,8 @@ import {
   CheckCircleIcon,
 } from 'lucide-react';
 import { Link } from 'react-scroll';
+import { Link as RouterLink } from 'react-router-dom';
+import Services from '../pages/Services';
 
 interface Package {
   id: string;
@@ -174,6 +176,12 @@ export default function ServicesSection() {
               </div>
             </div>
           ))}
+          <RouterLink
+            to='/services'
+            className='mt-8 inline-block text-center bg-lime-400 text-[#0c1031] font-semibold px-6'
+          >
+            More Services
+          </RouterLink>
         </div>
       </div>
     </section>

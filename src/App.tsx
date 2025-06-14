@@ -14,6 +14,7 @@ function App() {
         {showIntro && <IntroOverlay onFinish={() => setShowIntro(false)} />}
         <Routes>
           <Route path='/' element={<Home />} />
+
           <Route path='/Imprint' element={<Imprint />} />
           <Route path='/datenschutz' element={<Datenschutz />} />
         </Routes>
